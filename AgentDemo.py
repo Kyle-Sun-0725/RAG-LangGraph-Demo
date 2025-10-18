@@ -7,7 +7,7 @@ import os
 llm = init_chat_model(
     "deepseek:deepseek-chat",
     temperature=0,
-    api_key='sk-a3ca05a7965c43ae81a80dcd1f4c699b'
+    api_key='xxx'
 )
 
 # Define tools
@@ -141,4 +141,5 @@ from langchain_core.messages import HumanMessage
 messages = [HumanMessage(content="Add 3 and 4.")]
 messages = agent.invoke({"messages": messages})
 for m in messages["messages"]:
+
     m.pretty_print()
