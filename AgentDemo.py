@@ -7,7 +7,7 @@ import os
 llm = init_chat_model(
     "deepseek:deepseek-chat",
     temperature=0,
-    api_key='xxx'
+    api_key=os.environ.get("DEEPSEEK_API_KEY")  # 环境变量
 )
 
 # Define tools
@@ -143,3 +143,4 @@ messages = agent.invoke({"messages": messages})
 for m in messages["messages"]:
 
     m.pretty_print()
+
