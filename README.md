@@ -36,7 +36,6 @@
 | `app/nodes/sparql_agent.py`     | 执行 SPARQL 查询，获取 RDF 结果（传感器、类型、ts_id 等）。 |
 | `app/nodes/analysis_agent.py`   | 从 CSV 读取时间序列，计算平均值、最高/最低值、趋势。 |
 | `app/nodes/answer_agent.py`     | 将结果包装为自然语言回答，自动识别单位与语义类型。 |
-| `app/nodes/sparql_exec.py`      | 统一的 SPARQL 执行入口：封装 rdflib 查询并返回表格化结果。 |
 | `app/tools/brick_store.py`      | 加载并缓存 Brick RDF 图谱（site_generated.ttl），提供 Graph 查询能力。  |
 | `data_generator/data_generator.py` | 自动生成 Brick TTL 与时序 CSV，用于可复现实验。 |
 
